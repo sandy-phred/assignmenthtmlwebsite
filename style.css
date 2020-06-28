@@ -1,0 +1,138 @@
+body{
+margin:0;
+padding: 0;
+line-height: 1.5em;
+}
+
+/* navigation area begins */
+#header{
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active){
+    background-color: #352121;
+}
+
+
+.active{
+    background-color: #0099ff;
+}
+/* navigation area ends */
+
+/* content wrpper begins */
+#contentwrapper{
+    float: left;
+    width: 100%;
+}
+#contentcolumn{
+    margin: 0 230px 0 230px;
+}
+
+
+.innertext{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5E5E5e;
+}
+/* content area ends */
+
+/* left column begins */
+#leftcolumn{
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    background: #24c8ff;
+}
+/* left column ends */
+
+/* right column begins */
+#rightcolumn{
+    float: left;
+    width: 230px;
+    margin-left: -230px;
+    background: #fffb00;
+}
+/* right column ends */
+
+/* footer begins */
+#footer{
+    clear: left;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 4px;
+}
+
+
+/*About style ends */
+
+
+/* About style bgins */
+#textabout{
+    text-align: center;
+    color: green;
+}
+/* about style ends */
+
+/* responsive layout css */
+@media(max-width:840px){
+#leftcolumn{
+    margin-left: -100%; 
+}
+#rightcolumn{
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+}
+#contentcolumn{
+    margin-right: 0;
+}
+}
+/* end of 840px screen */
+
+/* beginning of 600px screen */
+@media(max-width:600px){
+
+    #leftcolumn{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+        background-color: red;
+    }
+    #contentcolumn{
+        margin-left: 0;
+    }
+}
+/* end of 600px  screen */
+
+
+
+
+
+
